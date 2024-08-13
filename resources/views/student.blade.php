@@ -1,7 +1,6 @@
-<?php
-    echo "Medical equipement <br>";
-    $n = 10;
-    for($i=1; $i <=10; $i++){
-        echo $i."<br>";
-    }
-?>
+Student Name: {{ $fname }}
+<br>
+Student Surname:{{ $lname }}
+<br>
+Student Department:{{ $dept }}
+<br>
