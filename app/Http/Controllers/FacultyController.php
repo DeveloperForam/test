@@ -12,4 +12,10 @@ class FacultyController extends Controller
         // dd($faculty);
         return view('faculty.disp',['disp'=>$faculty]);
     }
+
+    // public function delete($id){
+    //     // dd($id);
+    //     $id = Employee::find($id);
+    //     $id->delete;
+    // }
 }

@@ -16,4 +16,12 @@ class EmployeeController extends Controller
 
         return view('Employee', compact('name','email','phone','address','position'));
     }
+
+    public function edit($id){
+        //dd($id);
+        $edata = Emplployee::find($id);
+        return view('employees.edit',['employees'->$edata]);
+    }
+
+    public function delete($id){}
 }

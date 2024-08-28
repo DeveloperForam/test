@@ -9,10 +9,11 @@
         </tr>
         @foreach ($disp as $e)
         <tr >
-            <td>{{ $e->id}}</td>
-            <td>{{$e->name}}</td>
-            <td>{{$e->city}}</td>
-            <td>{{$e->email}}</td>
+            <th>{{ $e->id}}</th>
+            <th>{{$e->name}}</th>
+            <th>{{$e->city}}</th>
+            <th>{{$e->email}}</th>
+            <th><a href="{{ route('employee-edit',$disp->id)}}">Edit</a></th>
         </tr>
         @endforeach
         </table>

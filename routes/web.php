@@ -37,6 +37,11 @@ Route::post('student-submit',[mscitController::class,'student_submit'])->name('s
 
 Route::post('employee-submit',[EmployeeController::class,'employee_submit'])->name('employee-submit');
 
+Route::get('employee-edit/{id}',[EmployeeController::class,'employee_edit'])->name('employee-edit');
+
+Route::get('employee-delete/{id}',[EmployeeController::class,'employee_delete'])->name('employee-delete');
+
+
 // Route::get('/employee', function () {
 //     return view('employees.disp');
 // });
